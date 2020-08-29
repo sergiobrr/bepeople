@@ -34,9 +34,18 @@ desire = {
     'item_title': 'Desires desired on primodesiderio.com',
     'schema': DesireSchema
 }
+
+# errors can only be added and retrieved: GET, POST
+error = {
+    'item_title': 'Vue app errors',
+    'schema': ErrorSchema,
+    'resource_methods': ['GET', 'POST'],
+    'item_methods': ['GET']
+}
+
 URL_PREFIX = 'api/v1'
 DOMAIN = {
     'people': people,
-    'desire': desire
+    'desire': desire,
+    'error': error
 }
-
